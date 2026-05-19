@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task manager</title>
+    <link rel="stylesheet" href="css/stayle.css" />
+  </head>
+  <body>
+    <div id="app">
+      <p id="pra">TO DO list app</p>
+      <input type="text" id="input" />
+      <details id="filter">
+        <summary>filter</summary>
+        <p class="all">All</p>
+        <p class="Active">Active</p>
+        <p class="Completed">Completed</p>
+      </details>
+      <span id="error-msg"></span>
+
+      <div id="tasks">
+        <p id="list">my tasks <br /></p>
+
+        <ul id="ul"></ul>
+      </div>
+
+      <div id="btn">
+        <button id="save">SAVE</button>
+        <button id="remove">REMOVE All</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

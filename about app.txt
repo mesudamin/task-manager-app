@@ -1,0 +1,33 @@
+general task manager app  work stracture 
+    load --> 
+    add task -->
+    save --> 
+    load
+
+task manager app  fuatures stracture 
+    render function stracture 
+          first clean parent element -->set render on diffrent  mode (filter,no task ,normal) --> create loop for all object inside array -->  on loop create elements (li,delebtn, checkbox, editbtn ) --> create and set class for all element -->  apend that element to parent --> give for all elemnt what it desplay or it is value
+   
+    add task stracture is  
+           save function on click event   from  input filed  ---> check it value is empty and it duplicat task --> object (it have id = date.naw  , text = input.value ,done = false) ---> array =  save on local storage  --> it render --> display on screen
+     
+    delete btn stracture
+           from on click event  -->  parent element -->  chack it click is the delete btn -->   target the line using  li element --> extract id from li element -->  filter task using id and remove the all object propertis -->save on local storage --> render 
+    
+    task done stracture
+           from on click event  -->  parent element -->  chack it click is the checkbox -->   target the line using  li element --> extract id from li element --> find object using id -->chage done properte to true or false -->  save on local storage --> render 
+
+    edit btn  stracture
+           from on click event  -->  parent element -->  chack it click is the edit btn-->   target the line using  li element --> extract id from li element --> find object     using id -->   set input value to  text properte  --> save editing object on variable --> set save function on two mode editing mode and noraml --> change save btn to update btn
+
+    update btn stracture    
+           set save function on two mode  -->  check it on edit mode -->  find object using  that saved id --> set text properte value to input value --> change update btn to save btn --> remove that saved id from variable --> render 
+
+   removeall btn stracture
+           from click event -->  clean array --> clean parent element --> save on local storage--> render
+
+   no task cheker  stracture
+           on render check task  --> clean parent element -->  display  message 
+           
+   filter stracture
+           form click event --> check which target -->change filter state to target -->render        
