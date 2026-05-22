@@ -37,7 +37,6 @@ async function loadTasks() {
     span.innerText = "Network error. Please try again.";
   }
 }
-
 // SAVE FUNCTION
 async function savebtn() {
   save.disabled = true;
@@ -78,6 +77,9 @@ async function savebtn() {
     loadTasks();
   } catch (error) {
     span.innerText = "Network error. Please try again.";
+  } finally {
+    save.disabled = false;
+    save.textContent = "save";
   }
 }
 save.addEventListener("click", savebtn);
