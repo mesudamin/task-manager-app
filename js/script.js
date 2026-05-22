@@ -40,6 +40,8 @@ async function loadTasks() {
 
 // SAVE FUNCTION
 async function savebtn() {
+  save.disabled = true;
+  save.textContent = "saving...";
   try {
     let value = input.value.trim();
     if (inediting !== null) {
